@@ -13,7 +13,7 @@ dattime<-paste(dt, tm, sep=" ")  ## combine to form a single field (string) cont
 mydatetime<-strptime(dattime, "%d/%m/%Y %H:%M:%S")  ## strptime takes the string (date & time combined as character) and converts it to time datatime format which can be used by R
 
 
-plot(x=mydatetime, y=active_power, type="l",ylab="Global Active Power(kilowatt)" )
+plot(x=mydatetime, y=active_power, type="l",ylab="Global Active Power(kilowatt)" )  ## Plot created
 
 
 dev.copy(png, "plot2.png", height=480, width=480)

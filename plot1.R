@@ -7,5 +7,7 @@ active_power<-as.numeric(mydata2[,3]) ## select 3rd column -"Global Active Power
 
 hist(active_power, col=2, xlab="G lobal Active Power (kilowatts)", ylab="Frequency", main="Global Active Power") ## fill color set to red(2)
 
+## histogram created using data extracted
+
 dev.copy(png, "plot1.png", height=480, width=480)
 dev.off()
